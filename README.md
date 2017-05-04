@@ -12,5 +12,8 @@ or
 nock-auto-test > ./test/api-stub.js
 ```
 
+## Contributing
+`nock-auto` is a very small TypeScript script.
+
 ## License
 AGPLv3
