@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+    "./lib/**/*.ts"
+  ],
+  "exclude": [
+    "./node_modules/typescript/**/*"
+  ]
+}

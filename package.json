@@ -1,0 +1,28 @@
+{
+  "name": "nock-auto",
+  "version": "1.0.0",
+  "description": "Runs mocha tests with the nock recorder and writes fixtures to a file, then enables you to run them with and without HTTP mocking",
+  "main": "lib/index.js",
+  "bin": [
+    "bin/nock-auto",
+    "bin/nock-auto-test",
+    "bin/nock-auto-parse"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Pedro Tacla Yamada",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^7.0.16",
+    "mocha": "^2.3.4",
+    "superagent": "^1.6.1",
+    "typescript": "^2.3.2"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "jsfmt": "^0.5.3",
+    "lodash": "^4.17.4",
+    "nock": "^4.0.0"
+  }
+}
