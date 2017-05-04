@@ -1,6 +1,6 @@
 {
   "name": "nock-auto",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Helpers for using `nock` and generating API stubs from it.",
   "main": "lib/index.js",
   "bin": [
