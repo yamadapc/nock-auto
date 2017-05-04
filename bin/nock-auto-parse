@@ -1,6 +1,31 @@
 #!/usr/bin/env node
+const fs = require('fs');
+
+const inputFp = process.argv[2];
+const outputFp = process.argv[3];
+
+let inputFile;
+if (inputFp) {
+  inputFile = fs.createReadStream(inputFp);
+} else {
+  console.error('Reading from stdin');
+  inputFile = process.stdin;
+}
+
+let outputFile;
+if (outputFp) {
+  outputFile = fs.createWriteStream(outputFp);
+} else {
+  console.error('Writting to stdout');
+  outputFile = process.stdout;
+}
+
 let inp = '';
-process.stdin.on('data', (d) => {
+inputFile.on('data', (d) => {
   inp += d;
 });
-console.log(require('..').parse(inp));
+
+inputFile.on('end', () => {
+  const result = require('..').parse(inp);
+  outputFile.write(result);
+});

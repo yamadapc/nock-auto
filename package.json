@@ -1,7 +1,7 @@
 {
   "name": "nock-auto",
   "version": "1.0.0",
-  "description": "Runs mocha tests with the nock recorder and writes fixtures to a file, then enables you to run them with and without HTTP mocking",
+  "description": "Helpers for using `nock` and generating API stubs from it.",
   "main": "lib/index.js",
   "bin": [
     "bin/nock-auto",

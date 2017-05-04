@@ -20,9 +20,11 @@ export function parse(inputStr) {
     .value();
 
   const config = jsfmt.getConfig();
-  return _.map(parsed, function(item) {
+  const output = _.map(parsed, function(item) {
     return jsfmt.format(item, config);
   }).join('\n');
+  return `const nock = require('nock');
+${output}`;
 }
 
 export default function main() {
