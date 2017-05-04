@@ -3,4 +3,4 @@ const inp = '';
 process.stdin.on('data', (d) => {
   inp += d;
 });
-console.log(require('..').parse(d));
+console.log(require('..').parse(inp));
