@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const d = '';
+const inp = '';
 process.stdin.on('data', (d) => {
   inp += d;
 });
